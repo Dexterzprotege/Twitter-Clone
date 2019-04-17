@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <ul class="twitter" role="navigation">
+      <li><i class="fa fa-home" style="font-size: 20"></i>Home</li>
+      <li><i class="fa fa-bell-o"></i >Notifications</li>
+      <li><i class="fa fa-bolt"></i>Moments</li>
+      <li><i class="fa fa-envelope-o"></i>Messages</li>
+      <li class="twitter__bird"><i class="fa fa-twitter"></i></li>
+      <li><form><input placeholder="search twitter" id="ip4"/><i class="fa fa-search" ></i></form></li>
+      <li><i class="fa fa-user-circle-o" style="font-size:40px"></i></li>
+      <li><button id="btn">Tweet</button></li>
+    </ul>
+  </header>
+  <main>
+    <div>
+      <div class="wallcontainer">
+          <div class="profilecard">
+              <div class="profilecardhead"></div>
+              <div class="profilecardimagediv">
+                  <img src="pro.PNG"t>
+              </div>
+
+              <div class="profilecardnameidcont">
+                  <div class="profilecardnamecont">
+                      <span id="profilecardname"></span>
+                  </div>
+                  <span id="profilecarduid"></span>
+              </div>
+
+              <div class="profilecardstatsdiv">
+                  <ul class="profilecardstatslist">
+                      <li class="profilecardstatslistitem">
+                          <span class="dispblk">
+                              <span class="statslistitemhead">Tweets</span>
+                              <span id="statslistitemcount" class="statslistitemcount">0</span>
+                          </span>
+                      </li>
+
+                      <li class="profilecardstatslistitem">
+                          <span class="dispblk">
+                              <span class="statslistitemhead">Following</span>
+                              <span class="statslistitemcount">35</span>
+                          </span>
+                      </li>
+
+                      <li class="profilecardstatslistitem">
+                          <span class="dispblk">
+                              <span class="statslistitemhead">Followers</span>
+                              <span class="statslistitemcount">34</span>
+                          </span>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+
+
+          <div class="rightcontainer">
+              <div class="posttweetcontainer">
+                  <img class="posttweetprofimg" src="pro.PNG">
+                  <div class="ml56px">
+                      <div class="posttweettacontainer">
+                          <textarea id="posttweetta" class="posttweetta" placeholder="What's happening?"></textarea>
+                          <div class="posttweetcountcont">
+                              <span class="posttweetcount"><span id="totalchars">0</span>/250</span>
+                          </div>
+                      </div>
+                      <div class="posttweetbutcont">
+                          <button id="posttweetbut" class="posttweetbut">Tweet</button>
+                      </div>
+                  </div>
+              </div>
+              <div>
+                  <ul id="tweetscontainer" class="tweetscontainer">
+
+                  </ul>
+              </div>
+          </div>
+          <div class="wallcontainer">
+            <div class="profilecard">
+              <h3>Who to Follow</h3>
+            </div>
+          </div>
+      </div>
+  </div>
+  </main>
+</body>
+</html>
